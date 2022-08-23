@@ -1085,7 +1085,7 @@ function vk_document_mousemove(ent) {
 function init_virtualKeyboardChromeExtension_false() {
 	if (virtualKeyboardChromeExtensionTouchEvents != undefined) {
 		var e = document.activeElement;
-		if ((e.tagName == "TEXTAREA") || (e.tagName == "INPUT" && ((e.type == "text") || (e.type == "password") || (e.type == "search") || (e.type == "email") || (e.type == "number") || (e.type == "date") || (e.type == "url")))) {
+		if ((e.tagName == "TEXTAREA") || (e.tagName == "INPUT" && ((e.type == "text") || (e.type == "password") || (e.type == "search") || (e.type == "email") || (e.type == "number") || (e.type == "date") || (e.type == "url") || (e.type == "tel")))) {
 			if (e.getAttribute("_vkEnabled") != "true") {
 				e.blur();
 				init_virtualKeyboardChromeExtension(false);
